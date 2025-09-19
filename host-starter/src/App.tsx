@@ -6,8 +6,10 @@ import Upload from './views/upload/Upload';
 import ProtectedRoute from './components/ProtectedRoute';
 import Layout from './views/Layout';
 import Home from './views/home/Home';
-import { UserProvider } from 'mediastore/UserProvider';
-import {MediaProvider} from 'mediastore/MediaProvider';
+import { UserProvider } from 'mediastore/UserContext';
+import {MediaProvider} from 'mediastore/MediaContext';
+
+
 
 
 function App() {

@@ -9,7 +9,7 @@ import {
 } from './ui/tooltip';
 import { LuBell, LuSearch, LuUpload, LuUser } from 'react-icons/lu';
 // TODO: import useUserContext from mediastore mfe
-
+import { useUserContext } from 'mediastore/contextHooks';
 const TopBar = () => {
   const { user } = useUserContext();
   return (
