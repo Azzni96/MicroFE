@@ -195,6 +195,10 @@ const MediaProvider = ({ children }: { children: React.ReactNode }) => {
   };
   // ****************************************************************
 
+  const refrechSingleMedia = () => {
+    setRefreshSingleMediaItem(!refreshSingleMediaItem);
+  };
+
   return (
     <MediaContext.Provider
       value={{
@@ -205,6 +209,7 @@ const MediaProvider = ({ children }: { children: React.ReactNode }) => {
         updateMediaItem,
         postMediaItem,
         deleteMediaItem,
+        refreshSingleMedia: refrechSingleMedia,
       }}
     >
       {children}
