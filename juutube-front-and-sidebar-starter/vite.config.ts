@@ -10,12 +10,14 @@ export default defineConfig({
       name: 'front_and_sidebar',
       filename: 'remoteEntry.js',
       exposes: {
-        '../Front': './src/components/front/Front.tsx',
+        './Front': './src/components/front/Front.tsx',
+        './Sidebar': './src/components/sidebar/Sidebar.tsx',
+        './ThumbCarousel': './src/components/thumb-carousel/ThumbCraousel.tsx',
       },
       shared: ['react', 'react-dom', 'react-router-dom'],
     })
   ],
-  
+
   server: {
     port: 3002, // Set the desired port here
   },

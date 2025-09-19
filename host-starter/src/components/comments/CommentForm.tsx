@@ -1,8 +1,9 @@
 import { Button } from '@/components/ui/button';
 import { useForm } from '@/hooks/formHooks';
 import { Textarea } from '../ui/textarea';
-// TODO: import useComment from mediastore mfe
-// TODO: import useMediaContext from mediastore mfe
+
+import { useMediaContext } from 'mediastore/contextHooks';
+import { useComment } from 'mediastore/apiHooks';
 
 const CommentForm = (props: { mediaItemId?: string; replyToId?: string }) => {
   const { postComment, postReply } = useComment();

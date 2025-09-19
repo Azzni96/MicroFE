@@ -1,13 +1,13 @@
-// TODO: Import the Front component from the front_and_sidebar mfe
 import {useMediaContext} from 'mediastore/contextHooks';
-// TODO: Import the useMediaContext hook from the mediastore mfe
+import Front from 'front_and_sidebar/Front';
 
 const Home = () => {
-  // TODO: Use the useMediaContext hook to get the mediaItems
-  const { mediaItems } = useMediaContext();
+ const { mediaItems } = useMediaContext();
   console.log('Media Items in Home:', mediaItems);
-  // TODO: Pass the mediaItems to the Front component
-  return <div>Home</div>;
+  return <div>{<Front mediaItems={mediaItems} />}</div> 
+
+
+
 };
 
 export default Home;

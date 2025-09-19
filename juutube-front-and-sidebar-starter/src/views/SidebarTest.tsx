@@ -1,4 +1,4 @@
-/* // This is for testing purposes only
+// This is for testing purposes only
 import mediaItems from '@/assets/test.json';
 import SidebarThumbnail from '@/components/sidebar/SidebarThumbnail';
 import { MediaItem } from '@sharedTypes/DBTypes';
@@ -20,4 +20,3 @@ const SidebarTest = () => {
 };
 
 export default SidebarTest;
- */

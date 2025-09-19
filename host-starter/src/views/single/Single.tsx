@@ -3,7 +3,8 @@ import VideoPlayer from '@/components/player/VideoPlayer';
 import { MediaContextType } from '@sharedTypes/DBTypes';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-// TODO: import Sidebar from front_and_sidebar mfe
+import  Sidebar  from 'front_and_sidebar/Sidebar';
+import { useMediaContext } from 'mediastore/contextHooks';
 // TODO: Import useMediaContext from mediastore mfe
 
 const Single = () => {
